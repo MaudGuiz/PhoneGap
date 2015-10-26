@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.maud.wpappkit"
+        versionCode = "1"
+        version     = "1.1.0" >
+
+	<name>PhoneGap Test</name>
+
+	<description>test application</description>
+
+	<author href="" email="">Maud</author>
+
+	<gap:platform name="android" />
+
+	<preference name="phonegap-version" value="cli-5.2.0" />
+
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
+
+	<!-- PhoneGap plugin declaration -->
+	<gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<gap:plugin name="cordova-plugin-network-information" source="npm" />
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+	<gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
+	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />
+	<gap:plugin name="com.adobe.plugins.gaplugin" version="2.4.0" />
+	
+	<!-- Whitelist policy  -->
+	<access origin="*" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+
+	<!-- Icon and Splash screen declaration -->
+</widget>
