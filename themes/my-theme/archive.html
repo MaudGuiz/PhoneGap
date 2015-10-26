@@ -1,4 +1,4 @@
-<h1><%= list_title %></h1>
+<h1 class="liste-title"><%= list_title %></h1>
     
 <% if(posts.length){ %>
 
@@ -6,19 +6,20 @@
         <% _.each( posts, function( post ){ %>
             <div class="media">
                 <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
-                    <img class="media-object pull-left" src="<%= post.thumbnail.src %>" style="width: 87px; height: 58px;">
+                    <img class="media-object" src="<%= post.thumbnail.src %>" style="width: 100%; height: auto;">
                 <% } %>	
                 <div class="media-body">
                     <h4 class="media-heading">
                         <a href="<%= TemplateTags.getPostLink(post.id) %>" class="pull-left"><%= post.title %></a>
-                        &nbsp;<small class="small"><%= TemplateTags.formatDate(post.date,'d/m/Y') %></small>
+                        <br /><small class="small"><%= TemplateTags.formatDate(post.date,'d/m/Y') %></small>
                     </h4>
                     <p><%= post.excerpt %></p>
+                    <a href="<%= TemplateTags.getPostLink(post.id) %>" title="En savoir +">En savoir plus</a>
                 </div>
             </div>
         <% }); %>
     </ul>
 		
 <% }else{ %>
-        <p>No post found!</p>
+        <p>Aucune vidéo!</p>
 <% } %>
