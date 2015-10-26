@@ -1,0 +1,10 @@
+/*iframe{ width: 100%; height: auto; }*/
+
+#single-content img{ width: 100%; }
+
+.navbar-default{ 
+	background-color: #00a2dc !important; 
+}
+.navbar-default .navbar-brand a{ 
+	color: #ffffff !important; 
+}
